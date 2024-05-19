@@ -34,7 +34,6 @@ public class InterfazGrafica extends JFrame {
         }
     }
 
-    // Método para recoger los datos de una población y así no repetir código.
     private Poblacion recogerDatosPoblacion() {
         Poblacion poblacion = new Poblacion();
         String nombrePoblacion = JOptionPane.showInputDialog("Introduce el nombre de la población: ");
@@ -81,10 +80,9 @@ public class InterfazGrafica extends JFrame {
     }
 
     public InterfazGrafica() {
-        // Ajustes de swing.
         initComponents();
         setLayout(null);
-        setSize(200, 350);
+        setSize(200, 350); // Ajustar el tamaño de la ventana para acomodar el nuevo botón
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Gestión de cultivos de bacterias. ");
         setLocationRelativeTo(null);
@@ -99,6 +97,15 @@ public class InterfazGrafica extends JFrame {
         btnBorrarPoblacion = new JButton("Borrar población");
         btnVerDetalle = new JButton("<html>Información detallada<br>de una población</html>");
         btnSimulacionMontecarlo = new JButton("Simulación Montecarlo");
+
+        // Asignar nombres únicos a los componentes
+        btnAbrirArchivo.setName("btnAbrirArchivo");
+        btnNuevoExperimento.setName("btnNuevoExperimento");
+        btnAgregarPoblacion.setName("btnAgregarPoblacion");
+        btnVisualizarPoblaciones.setName("btnVisualizarPoblaciones");
+        btnBorrarPoblacion.setName("btnBorrarPoblacion");
+        btnVerDetalle.setName("btnVerDetalle");
+        btnSimulacionMontecarlo.setName("btnSimulacionMontecarlo");
 
         btnAbrirArchivo.setBounds(20, 20, 150, 35);
         btnNuevoExperimento.setBounds(20, 60, 150, 30);
@@ -116,7 +123,6 @@ public class InterfazGrafica extends JFrame {
         add(btnVerDetalle);
         add(btnSimulacionMontecarlo);
 
-        // Botón para abrir un archivo de experimento.
         btnAbrirArchivo.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             if (nombresExperimentos.length == 0) {
@@ -138,7 +144,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        // Botón para crear un nuevo experimento.
         btnNuevoExperimento.addActionListener(e -> {
             String nombreExperimento = JOptionPane.showInputDialog("Introduce el nombre del experimento:");
             if (nombreExperimento != null && !nombreExperimento.trim().isEmpty()) {
@@ -169,7 +174,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        // Botón para agregar una población a un experimento.
         btnAgregarPoblacion.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             String nombreArchivo = (String) JOptionPane.showInputDialog(null, "Selecciona un experimento:", "Abrir Experimento", JOptionPane.QUESTION_MESSAGE, null, nombresExperimentos, nombresExperimentos[0]);
@@ -188,7 +192,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        //Botón para visualizar los nombres de las poblaciones.
         btnVisualizarPoblaciones.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             String nombreArchivo = (String) JOptionPane.showInputDialog(null, "Selecciona un experimento:", "Abrir Experimento", JOptionPane.QUESTION_MESSAGE, null, nombresExperimentos, nombresExperimentos[0]);
@@ -212,7 +215,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        // Botón para borrar una poblacion de un experimento.
         btnBorrarPoblacion.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             String nombreArchivo = (String) JOptionPane.showInputDialog(null, "Selecciona un experimento:", "Abrir Experimento", JOptionPane.QUESTION_MESSAGE, null, nombresExperimentos, nombresExperimentos[0]);
@@ -240,7 +242,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        // Botón para ver los detalles de una población, suministro de comida por días y caracteristicas.
         btnVerDetalle.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             String nombreExperimento = (String) JOptionPane.showInputDialog(null, "Selecciona un experimento:", "Abrir Experimento", JOptionPane.QUESTION_MESSAGE, null, nombresExperimentos, nombresExperimentos[0]);
@@ -267,7 +268,6 @@ public class InterfazGrafica extends JFrame {
             }
         });
 
-        // Botón para realizar la simulación de Montecarlo.
         btnSimulacionMontecarlo.addActionListener(e -> {
             String[] nombresExperimentos = GestorDatos.obtenerNombresExperimentos();
             String nombreArchivo = (String) JOptionPane.showInputDialog(null, "Selecciona un experimento:", "Abrir Experimento", JOptionPane.QUESTION_MESSAGE, null, nombresExperimentos, nombresExperimentos[0]);
@@ -315,7 +315,6 @@ public class InterfazGrafica extends JFrame {
         JOptionPane.showMessageDialog(this, mensaje.toString(), "Resultados Simulación Montecarlo", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    // Método main para ejecutar la interfaz gráfica (para ejecutar todo el proyecto).
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new InterfazGrafica());
     }
