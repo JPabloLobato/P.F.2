@@ -4,7 +4,7 @@ Este proyecto es una simulación de aplicación de escritorio en Java para gesti
 ## Inicialización
 Para inicializar el proyecto, se debe clonar el repositorio y abrirlo en un IDE de Java. Hay dos formas de ejecutar la aplicación:
 1. Ejecutar el archivo `Main.java` en la carpeta `Practica.F2/src/main/java` desde el IDE.
-2. Ejecutar el archivo `Proyecto.jar` en la carpeta `target` desde la terminal con el comando `java -jar Proyecto.jar`.
+2. Ejecutar el archivo `Proyecto.jar` en la carpeta `out/artifacts/P_F_2_jar` desde la terminal con el comando `java -jar P.F.2.jar`.
 ## Características
 
 - **Crear Nuevos Experimentos:** Permite crear y guardar nuevos experimentos.
