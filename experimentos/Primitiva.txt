@@ -19,6 +19,6 @@ Temperatura: 1.0
 Luminosidad: Baja
 Comida inicial: 25646
 Día incremento comida: 9
-Comida día incremento: 4
+Comida día incremento: 5
 Comida final: 300000
 Patrón de comida: PatronAlimentacionIncremento
