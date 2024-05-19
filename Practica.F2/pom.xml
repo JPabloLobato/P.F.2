@@ -64,7 +64,8 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>UI.InterfazGrafica</mainClass>
+              <addClasspath>true</addClasspath>
+              <mainClass>org.example.UI.InterfazGrafica</mainClass> <!-- Reemplaza con tu clase principal -->
             </manifest>
           </archive>
         </configuration>
