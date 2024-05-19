@@ -1,6 +1,8 @@
 # Proyecto Simulación Gestión de Cultivos de Bacterias
 ## Descripción
 Este proyecto es una simulación de aplicación de escritorio en Java para gestionar cultivos de bacterias. Permite crear y manejar experimentos con diferentes poblaciones de bacterias, simular patrones de alimentación y realizar simulaciones de Montecarlo. La aplicación utiliza Swing para la interfaz gráfica y soporta la persistencia de datos mediante archivos de texto.
+## URL GitHub
+URL: https://github.com/JPabloLobato/P.F.2.git
 ## Inicialización
 Para inicializar el proyecto, se debe clonar el repositorio y abrirlo en un IDE de Java. Hay dos formas de ejecutar la aplicación:
 1. Ejecutar el archivo `Main.java` en la carpeta `Practica.F2/src/main/java` desde el IDE.
