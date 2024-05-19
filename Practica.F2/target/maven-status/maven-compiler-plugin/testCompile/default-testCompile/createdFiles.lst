@@ -1,0 +1,5 @@
+logica_de_negocio\SimulacionMontecarloTest.class
+org\example\UI\InterfazGraficaTest.class
+logica_de_negocio\PoblacionTest.class
+logica_de_negocio\ExperimentoTest.class
+persistencia\GestorDatosTest.class

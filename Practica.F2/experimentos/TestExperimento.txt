@@ -1,0 +1,13 @@
+Nombre: TestExperimento
+Duración: 30
+Población: PoblacionTest
+Fecha de inicio: 01/01/2023
+Fecha de fin: 31/01/2023
+Número de bacterias iniciales: 1000
+Temperatura: 37.5
+Luminosidad: Alta
+Comida inicial: 50000
+Día incremento comida: 15
+Comida día incremento: 2000
+Comida final: 60000
+Patrón de comida: PatronAlimentacionConstante
