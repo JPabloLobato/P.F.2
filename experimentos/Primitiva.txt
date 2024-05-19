@@ -1,0 +1,24 @@
+Nombre: Primitiva
+Duración: 30
+Población: Supernova
+Fecha de inicio: 14/01/2023
+Fecha de fin: 14/03/2023
+Número de bacterias iniciales: 65588
+Temperatura: 22.0
+Luminosidad: Alta
+Comida inicial: 16155
+Día incremento comida: 5
+Comida día incremento: 2
+Comida final: 200000
+Patrón de comida: PatronAlimentacionAlterno
+Población: Mutante
+Fecha de inicio: 08/09/2023
+Fecha de fin: 01/10/2023
+Número de bacterias iniciales: 4842
+Temperatura: 1.0
+Luminosidad: Baja
+Comida inicial: 25646
+Día incremento comida: 9
+Comida día incremento: 4
+Comida final: 300000
+Patrón de comida: PatronAlimentacionIncremento
